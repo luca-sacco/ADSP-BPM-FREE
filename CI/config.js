@@ -1,11 +1,10 @@
 const BranchName = {
-  DEVELOP: "develop",
-  PRODUCTION: "production",
-  PRE_PRODUCTION: "pre-production",
-  STAGING: "staging",
+  DEVELOP: "origin/develop",
+  PRODUCTION: "origin/production",
+  PRE_PRODUCTION: "origin/pre-production",
+  STAGING: "origin/staging",
 };
 
 module.exports = {
-  EnvName,
   BranchName,
 };
