@@ -3,6 +3,7 @@ const log = console.log;
 // const { initRelease } = require("./release");
 const { execSync } = require("child_process");
 const { BranchName } = require("./config");
+// const { BranchName } = require("./config");
 
 const init = () => {
   logStart();
@@ -23,8 +24,9 @@ const init = () => {
 };
 
 const execDistribution = (configEnv) => {
+  const version = require("../package.json").version;
   try {
-    execSync(`node ./CI/distribute ${configEnv}`, {
+    execSync(`node ./scripts/distribute ${version}  ${configEnv}`, {
       stdio: "inherit",
     });
   } catch (err) {
