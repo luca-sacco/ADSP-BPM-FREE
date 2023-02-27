@@ -1,0 +1,30 @@
+{
+  "richiedente": {
+    "azienda": "string",
+    "capResidenza": "string",
+    "codiceFiscale": "string",
+    "cognome": "string",
+    "comuneNascita": "string",
+    "comuneNascitaUuid": "string",
+    "comuneResidenza": "string",
+    "comuneResidenzaUuid": "string",
+    "dataNascita": "string",
+    "email": "string",
+    "id": 0,
+    "indirizzo": "string",
+    "nazioneNascita": "string",
+    "nazioneNascitaUuid": "string",
+    "nazioneResidenza": "string",
+    "nazioneResidenzaUuid": "string",
+    "nome": "string",
+    "pec": "string",
+    "provinciaNascita": "string",
+    "provinciaNascitaUuid": "string",
+    "provinciaResidenza": "string",
+    "provinciaResidenzaUuid": "string",
+    "sesso": "string",
+    "telefonoCell": "string",
+    "telefonoFisso": "string",
+    "uuid": "string"
+  }
+}

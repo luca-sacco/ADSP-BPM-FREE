@@ -1,0 +1,20 @@
+{
+  "UUID_COMUNICAZIONE_GENERICA": {
+    "dataValues": {
+      "COM_OGGETTO": "OGGETTO_VALUE",
+      "COM_CLASS_OPZIONI_SELECT": "VALORE_SCELTO_SELECT_CLASSIFICAZIONE",
+      "COM_UFFICI_CONOSCENZA": []
+    },
+    "staticValues": {
+      "COM_TITLE": "COM_NON_VALIDA_TITLE",
+      "COM_LONG_TEXT": "COM_NON_VALIDA_LONG_TEXT",
+      "COM_TIPO_DOCUMENTO": "tipo-documento",
+      "COM_CLASS_LABEL_SELECT": "LABEL_TRADUZIONE_SELECT_CLASS",
+      "COM_ID_DOC": [
+        {
+          "documento_id": 121
+        }
+      ]
+    }
+  }
+}

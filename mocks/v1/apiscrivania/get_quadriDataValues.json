@@ -1,0 +1,22 @@
+{
+  "dataCompletamento": "",
+  "quadriTask": {
+    "RIFERIMENTI": {
+      "dataValues": {
+        "UFFICIO_UNICO": "Valore ufficio unico",
+        "ADSP": "ADSP_stringa",
+        "UFFICIO_COMPETENTE": "uuid"
+      }
+    },
+    "RICHIESTA": {
+      "dataValues": {
+        "APERTURA_PUBBLICAZIONE": "OMESSA_PUB"
+      }
+    },
+    "VALIDITA_ISTANZA": {
+      "dataValues": {
+        "VALIDITA": "VALIDA"
+      }
+    }
+  }
+}

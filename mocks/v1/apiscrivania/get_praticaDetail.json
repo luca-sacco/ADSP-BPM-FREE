@@ -1,0 +1,22 @@
+{
+  "codiceFiscaleDelegato": "string",
+  "codiceFiscaleRichiedente": "string",
+  "cognomeDelegato": "string",
+  "cognomeRichiedente": "string",
+  "comuneNascitaDelegato": "string",
+  "comuneNascitaRichiedente": "string",
+  "dataNascitaDelegato": "string",
+  "dataNascitaRichiedente": "string",
+  "dataProtocollo": "string",
+  "dataUltimoAggiornamento": "string",
+  "fase": "string",
+  "nomeDelegato": "string",
+  "nomeRichiedente": "string",
+  "numeroPratica": "string",
+  "numeroProtocollo": "string",
+  "procedimento": "string",
+  "provinciaDelegato": "string",
+  "provinciaRichiedente": "string",
+  "richiedente": "string",
+  "stato": "string"
+}

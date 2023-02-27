@@ -1,0 +1,41 @@
+{
+  "content": [
+    {
+      "associato": true,
+      "azienda": "string",
+      "codiceFiscale": "string",
+      "cognome": "string",
+      "email": "string",
+      "nome": "string",
+      "pec": "string",
+      "telefonoCell": "string",
+      "telefonoFisso": "string",
+      "uuid": "122112212121"
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": true,
+      "unsorted": false,
+      "empty": false
+    },
+    "pageNumber": 0,
+    "pageSize": 10,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "last": true,
+  "totalPages": 1,
+  "totalElements": 5,
+  "first": true,
+  "sort": {
+    "sorted": true,
+    "unsorted": false,
+    "empty": false
+  },
+  "numberOfElements": 5,
+  "size": 10,
+  "number": 0,
+  "empty": false
+}

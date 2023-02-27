@@ -1,0 +1,10 @@
+[
+  {
+    "chiaveLabel": "COMUNICA_NON_VALIDITA",
+    "ordine": 1,
+    "abilitato": true,
+    "procTaskStepUuid": "f38fea40-3bdd-11eb-adc1-0242ac120002",
+    "stato": null,
+    "tipo": "DATIPRATICA"
+  }
+]

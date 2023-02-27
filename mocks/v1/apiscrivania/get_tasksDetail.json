@@ -1,0 +1,14 @@
+[
+  {
+    "chiaveLabel": "APERTURA_REGISTRO",
+    "ordine": 1,
+    "procTaskUuid": "09db4111-51aa-4984-833b-b78533cb1b5b",
+    "quadriTask": [
+      {
+        "chiaveFE": "APERTURA_REGISTRO",
+        "ordine": 1,
+        "strutturaComp": ""
+      }
+    ]
+  }
+]

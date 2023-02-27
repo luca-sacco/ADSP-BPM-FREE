@@ -1,0 +1,11 @@
+[
+  {
+    "strutturaCompilazione": "{\"htmlStructure\": {},\"input\": {\"api\": [{\"name\": \"getRichiedenteByPratica\",\"request\": {},\"response\": {\"transform\": {\"wrapperKeyOut\": \"RICHIDENTE\"}}},{\"name\": \"getUfficiCompetenti\",\"request\": {}, \"response\": {\"transform\": {\"wrapperKeyOut\": \"UFFICI_COMPETENTI\"}}},{\"name\": \"getOggettoDataInfo\",\"response\": {\"transform\": {            \"wrapperKeyIn\": \"COM_CLASS_OPZIONI_SELECT\",            \"wrapperKeyOut\": \"COM_CLASS_OPZIONI_SELECT_OPTIONS\"          }        },        \"request\": {          \"pathParams\": {            \"chiaveOggetto\": \"COM_CLASS_OPZIONI_SELECT\"          }        }      }    ]  },  \"output\": {    \"api\": [      {        \"forms\": [          \"formFile\"        ],        \"name\": \"caricaDocumentoPratica\",        \"request\": {}      }    ],    \"saveStepForms\": [      \"formUfficiArray\",      \"formClassificazione\",      \"formOggetto\"    ]  }}",
+    "uuidProcTaskStepQuadro": "UUID_COMUNICAZIONE_GENERICA",
+    "chiaveTitolo": "COMUNICAZIONE",
+    "ordine": 1,
+    "abilitato": true,
+    "tipo": "COMUNICAZIONE",
+    "tipoFE": "COMUNICAZIONE"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "git": {
+    "commitArgs": "--no-verify",
+    "requireCleanWorkingDir": false,
+    "requireUpstream": false,
+    "commit": true,
+    "push": true,
+    "tag": true
+  },
+  "verbose": 2,
+  "npm": {
+    "publish": false
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    },
+    "./scripts/release/gitlab/release_it_gitlab.js": {
+      "hostname": "production.eng.it",
+      "release": true,
+      "skipChecks": true,
+      "path": "/gitlab/api/v4/projects/5946/releases",
+      "origin": "https://production.eng.it/gitlab",
+      "projectID": "5946",
+      "releaseUrl": "https://production.eng.it/gitlab/adsp_sua/front-end/genova/adsp-bpm/-/releases",
+      "releaseName": "Release ${version}",
+      "tokenRef": "GITLAB_TOKEN",
+      "tokenHeader": "PRIVATE-TOKEN"
+    }
+  }
+}

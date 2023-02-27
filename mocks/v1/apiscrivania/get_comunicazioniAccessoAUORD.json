@@ -1,0 +1,21 @@
+[
+  {
+    "dataInvio": "2020-03-07",
+    "oggetto": "string",
+    "stato": "NON_INVIATA",
+    "ufficioDestinatario": "string",
+    "uuid": "string",
+    "uuidDocumento": "string",
+    "uuidRichiesteAccesso": [
+      {
+        "uuid": "string"
+      }
+    ],
+    "uuidUfficiConoscenza": [
+      {
+        "uuid": "string"
+      }
+    ],
+    "uuidUfficioDestinatario": "string"
+  }
+]
