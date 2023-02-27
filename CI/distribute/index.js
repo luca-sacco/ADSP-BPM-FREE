@@ -5,6 +5,7 @@ const Ora = require("ora");
 const path = require("path");
 const SftpUpload = require("sftp-upload");
 const Client = require("ssh2-sftp-client");
+const fs = require('fs');
 
 const spinner = Ora();
 
@@ -13,7 +14,6 @@ const log = console.log;
 const initDistribution = async () => {
   const [version, configEnv, branch] = process.argv.splice(2);
 
-  console.log(configEnv)
 
   log(
     chalk.bold(
@@ -21,10 +21,10 @@ const initDistribution = async () => {
     )
   );
 
-  const newConfig = configEnv.replace(/\//g, '');
+  const config = fs.readFileSync(configEnv, {encoding: 'utf8'});
 
-  console.log('newCongi!!', newConfig);
-  console.log(JSON.parse(newConfig));
+  console.log('newCongi!!', config);
+  console.log(JSON.parse(config));
 
   try {
     const config = require(`./environments/distribute.${branch}.json`);
