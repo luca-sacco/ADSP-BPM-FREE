@@ -19,8 +19,7 @@ const initDistribution = async () => {
     )
   );
 
-  console.log(configEnv);
-  console.log(typeof configEnv);
+  console.log(JSON.parse(configEnv));
 
   try {
     const config = require(`./environments/distribute.${branch}.json`);
