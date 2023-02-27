@@ -27,7 +27,7 @@ const execDistribution = (configEnv, branch) => {
 
   const version = require("../package.json").version;
   try {
-    execSync(`node ./scripts/distribute ${version}  ${configEnv}  ${branch}`, {
+    execSync(`node ./CI/distribute ${version}  ${configEnv}  ${branch}`, {
       stdio: "inherit",
     });
   } catch (err) {
@@ -43,7 +43,7 @@ const logStart = () => {
     "###########################################################################"
   );
   log("###\t\t\t\t\t\t\t\t\t###");
-  log(chalk.bold("###\t\t\t Adsp CII \t\t\t\t\t###"));
+  log(chalk.bold("###\t\t\t Adsp BPM \t\t\t\t\t###"));
   log("###\t\t\t\t\t\t\t\t\t###");
   log(
     "###########################################################################"
