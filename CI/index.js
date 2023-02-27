@@ -26,7 +26,7 @@ const init = () => {
 const execDistribution = (configEnv, branch) => {
   const version = require("../package.json").version;
   try {
-    execSync(`node ./scripts/distribute ${version}  ${configEnv} ${branch}`, {
+    execSync(`node ./scripts/distribute ${version}  ${configEnv}  ${branch}`, {
       stdio: "inherit",
     });
   } catch (err) {

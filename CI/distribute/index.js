@@ -11,6 +11,7 @@ const spinner = Ora();
 const log = console.log;
 
 const initDistribution = async () => {
+  console.log(process.argv);
   const [version, configEnv, branch] = process.argv.splice(2);
 
   log(
