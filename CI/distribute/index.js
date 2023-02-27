@@ -21,6 +21,7 @@ const initDistribution = async () => {
 
   const newConfig = configEnv.replace(/[\n\r]+/g, '\\n');
 
+  console.log('newCongi!!');
   console.log(JSON.parse(newConfig));
 
   try {
