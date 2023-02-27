@@ -13,6 +13,8 @@ const log = console.log;
 const initDistribution = async () => {
   const [version, configEnv, branch] = process.argv.splice(2);
 
+  console.log(configEnv)
+
   log(
     chalk.bold(
       `\n-------- Starting distribution of v${version} on ${branch} enviroment -------- \n`
