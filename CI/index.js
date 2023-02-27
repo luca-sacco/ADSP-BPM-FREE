@@ -14,7 +14,7 @@ const init = () => {
     case BranchName.DEVELOP:
     case BranchName.PRE_PRODUCTION:
     case BranchName.PRODUCTION:
-      execDistribution();
+      execDistribution(envConfig, branch);
       break;
     case BranchName.STAGING:
 
@@ -23,10 +23,10 @@ const init = () => {
   }
 };
 
-const execDistribution = (configEnv) => {
+const execDistribution = (configEnv, branch) => {
   const version = require("../package.json").version;
   try {
-    execSync(`node ./scripts/distribute ${version}  ${configEnv}`, {
+    execSync(`node ./scripts/distribute ${version}  ${configEnv} ${branch}`, {
       stdio: "inherit",
     });
   } catch (err) {
