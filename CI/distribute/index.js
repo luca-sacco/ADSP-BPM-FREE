@@ -19,7 +19,9 @@ const initDistribution = async () => {
     )
   );
 
-  console.log(JSON.parse(configEnv));
+  const newConfig = configEnv.replace(/[\n\r]+/g, '\\n');
+
+  console.log(JSON.parse(newConfig));
 
   try {
     const config = require(`./environments/distribute.${branch}.json`);
