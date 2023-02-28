@@ -12,7 +12,7 @@ const spinner = Ora();
 const log = console.log;
 
 const initDistribution = async () => {
-  const [version, configEnv, branch] = process.argv.splice(2);
+  const [version, configFilePath, branch] = process.argv.splice(2);
 
 
   log(
@@ -21,13 +21,11 @@ const initDistribution = async () => {
     )
   );
 
-  const config = fs.readFileSync(configEnv, {encoding: 'utf8'});
+  const config = fs.readFileSync(configFilePath, {encoding: 'utf8'});
 
-  console.log('newCongi!!', config);
   console.log(JSON.parse(config));
 
   try {
-    const config = require(`./environments/distribute.${branch}.json`);
     const { name } = require("../../package.json");
 
     config.buildsDir = config.buildsDir.replace("{micro-fe}", name);
@@ -38,8 +36,8 @@ const initDistribution = async () => {
         .replace("{micro-fe}", name);
 
     await build(version);
-    await deploy(config);
-    updateImportMap(config, version, name);
+    // await deploy(config);
+    // updateImportMap(config, version, name);
   } catch (err) {
     log(chalk.red("\n", err));
     process.exit(1);

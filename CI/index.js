@@ -8,13 +8,13 @@ const { BranchName } = require("./config");
 const init = () => {
   logStart();
 
-  const [envConfig, branch] = process.argv.splice(2);
+  const [configFilePath, branch] = process.argv.splice(2);
 
   switch (branch) {
     case BranchName.DEVELOP:
     case BranchName.PRE_PRODUCTION:
     case BranchName.PRODUCTION:
-      execDistribution(envConfig, branch);
+      execDistribution(configFilePath, branch);
       break;
     case BranchName.STAGING:
 
@@ -23,11 +23,11 @@ const init = () => {
   }
 };
 
-const execDistribution = (configEnv, branch) => {
+const execDistribution = (configFilePath, branch) => {
 
   const version = require("../package.json").version;
   try {
-    execSync(`node ./CI/distribute ${version}  ${configEnv}  ${branch}`, {
+    execSync(`node ./CI/distribute ${version}  ${configFilePath}  ${branch}`, {
       stdio: "inherit",
     });
   } catch (err) {
