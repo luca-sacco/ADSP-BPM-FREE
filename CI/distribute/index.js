@@ -45,6 +45,7 @@ const initDistribution = async () => {
 };
 
 const build = async (version) => {
+  console.log('\n\n PKG ->', pkgJson.scripts["build:staging"]);
   const npmBuildScript = pkgJson.scripts["build:staging"];
 
   const versionedNpmBuildScript = npmBuildScript.replace("${version}", version);
